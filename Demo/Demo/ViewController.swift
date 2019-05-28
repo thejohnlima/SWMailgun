@@ -12,7 +12,9 @@ import BaseNetworkKit
 class ViewController: UIViewController {
 
   // MARK: - Properties
-  @IBOutlet weak var textField: UITextField!
+  @IBOutlet weak var emailField: UITextField!
+  @IBOutlet weak var domainField: UITextField!
+  @IBOutlet weak var apiKeyField: UITextField!
   @IBOutlet weak var sendButton: UIButton!
 
   let viewModel = ViewModel()
@@ -30,19 +32,20 @@ class ViewController: UIViewController {
 
   // MARK: - Actions
   @IBAction private func send(_ sender: Any?) {
-    guard let text = textField.text, !text.isEmpty else {
-      showAlert(message: "Email not found")
+    guard isFieldsFilled() else {
+      showAlert(message: "Fill all fields")
       return
     }
-    viewModel.sendEmail(to: text)
+    viewModel.sendEmail(to: emailField.text!, auth: MailgunAuth(domain: domainField.text!, apiKey: apiKeyField.text!))
     view.endEditing(true)
   }
 
   // MARK: - Private Methods
   private func setupUI() {
-    textField.delegate = self
-    textField.layer.borderWidth = 1
-    textField.layer.borderColor = UIColor.darkGray.cgColor
+    for field in [emailField, domainField, apiKeyField] {
+      field?.layer.borderWidth = 1
+      field?.layer.borderColor = UIColor.darkGray.cgColor
+    }
 
     sendButton.layer.cornerRadius = sendButton.bounds.height / 2
     sendButton.layer.masksToBounds = true
@@ -56,7 +59,7 @@ class ViewController: UIViewController {
           UIApplication.shared.isNetworkActivityIndicatorVisible = true
         case .load(data: let result):
           UIApplication.shared.isNetworkActivityIndicatorVisible = false
-          self.showAlert(message: result.message)
+          self.showAlert(message: "✅ \(result.message)")
         case .errored(error: let error):
           UIApplication.shared.isNetworkActivityIndicatorVisible = false
           let error = (error as? NKError)?.message ?? error.localizedDescription
@@ -74,11 +77,9 @@ class ViewController: UIViewController {
     alert.addAction(action)
     present(alert, animated: true)
   }
-}
 
-extension ViewController: UITextFieldDelegate {
-  public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-    send(sendButton)
-    return true
+  private func isFieldsFilled() -> Bool {
+    let result = [emailField, domainField, apiKeyField].first { $0?.text?.isEmpty == true } == nil
+    return result
   }
 }
