@@ -32,30 +32,56 @@
                                     <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2o-fx-6C3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-7p-Taf">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Destination" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="F7N-7p-Taf">
                                 <rect key="frame" x="31.333333333333343" y="83" width="312.33333333333326" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="JFL-zL-Ytk"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="send" textContentType="email"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Domain" textAlignment="center" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="H8g-H1-MGX">
+                                <rect key="frame" x="31.333333333333343" y="135" width="312.33333333333326" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="vOi-8T-YZB"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="API Key" textAlignment="center" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="QDA-lw-Mhj">
+                                <rect key="frame" x="31.333333333333343" y="187" width="312.33333333333326" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Eim-Ag-WcS"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Snd-l4-6rt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.5" id="5q7-Dq-XV0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Snd-l4-6rt" secondAttribute="bottom" constant="44" id="6tA-kB-9hc"/>
+                            <constraint firstItem="H8g-H1-MGX" firstAttribute="width" secondItem="F7N-7p-Taf" secondAttribute="width" id="8wS-IH-3O9"/>
+                            <constraint firstItem="QDA-lw-Mhj" firstAttribute="top" secondItem="H8g-H1-MGX" secondAttribute="bottom" constant="8" symbolic="YES" id="FRk-Et-Xxr"/>
+                            <constraint firstItem="H8g-H1-MGX" firstAttribute="top" secondItem="F7N-7p-Taf" secondAttribute="bottom" constant="8" symbolic="YES" id="KM9-ya-eoK"/>
+                            <constraint firstItem="QDA-lw-Mhj" firstAttribute="width" secondItem="H8g-H1-MGX" secondAttribute="width" id="Pw9-fW-hou"/>
                             <constraint firstItem="F7N-7p-Taf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="SAc-Du-4WM"/>
                             <constraint firstItem="Snd-l4-6rt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="YoV-m6-Eni"/>
                             <constraint firstItem="F7N-7p-Taf" firstAttribute="centerX" secondItem="Snd-l4-6rt" secondAttribute="centerX" id="alM-ok-bhB"/>
                             <constraint firstItem="F7N-7p-Taf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:1.2" id="oH0-3S-btF"/>
+                            <constraint firstItem="QDA-lw-Mhj" firstAttribute="centerX" secondItem="H8g-H1-MGX" secondAttribute="centerX" id="vhs-D9-ndw"/>
+                            <constraint firstItem="H8g-H1-MGX" firstAttribute="centerX" secondItem="F7N-7p-Taf" secondAttribute="centerX" id="yHn-Tg-7YV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="apiKeyField" destination="QDA-lw-Mhj" id="svm-1O-qpk"/>
+                        <outlet property="domainField" destination="H8g-H1-MGX" id="fSw-cS-2lY"/>
+                        <outlet property="emailField" destination="F7N-7p-Taf" id="ak5-ir-04a"/>
                         <outlet property="sendButton" destination="Snd-l4-6rt" id="e6A-ZM-d0g"/>
-                        <outlet property="textField" destination="F7N-7p-Taf" id="ak5-ir-04a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
