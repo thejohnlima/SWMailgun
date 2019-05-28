@@ -1,0 +1,8 @@
+language: swift
+osx_image: xcode10.2
+before_install:
+- set -o pipefail
+- xcrun simctl boot "iPhone XS" || echo "(Pre)Launched the simulator."
+script:
+- pod lib lint --allow-warnings
+- pod spec lint --allow-warnings

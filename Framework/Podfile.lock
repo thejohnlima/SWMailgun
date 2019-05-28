@@ -1,0 +1,16 @@
+PODS:
+  - BaseNetworkKit (1.0.6)
+
+DEPENDENCIES:
+  - BaseNetworkKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BaseNetworkKit
+
+SPEC CHECKSUMS:
+  BaseNetworkKit: 6890d5617f2675b5fd0c9edd02051e1fea86594b
+
+PODFILE CHECKSUM: 00286d1d067c440935bef60c9c5d2df3a45d5d41
+
+COCOAPODS: 1.7.0

@@ -1,0 +1,9 @@
+platform :ios, '9.3'
+
+target 'SWMailgun' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+  # Pods for SWMailgun
+  pod 'BaseNetworkKit'
+end
