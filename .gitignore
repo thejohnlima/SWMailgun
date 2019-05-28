@@ -24,6 +24,7 @@ xcuserdata/
 .DS_Store
 .DS_Store?
 coverage
+.vscode
 
 ## Obj-C/Swift specific
 *.hmap
