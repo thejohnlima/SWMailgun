@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.platform           = :ios, "9.3"
   s.source             = { :git => "https://github.com/limadeveloper/SWMailgun.git", :tag => "#{s.version}" }
   s.source_files       = "Framework/SWMailgun/Source/**/*.{swift}"
-  s.swift_version      = "4.0"
+  s.swift_version      = "4.1"
   s.dependency 'BaseNetworkKit'
 end
