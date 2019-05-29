@@ -1,6 +1,6 @@
 # SWMailgun
 
-[![GitHub release](https://img.shields.io/github/release/limadeveloper/SWMailgun.svg)](https://github.com/limadeveloper/SWMailgun/releases)
+[![GitHub release](https://img.shields.io/github/release/limadeveloper/SWMailgun.svg?style=flat-square)](https://github.com/limadeveloper/SWMailgun/releases)
 [![Build Status](https://travis-ci.com/limadeveloper/SWMailgun.svg?branch=master)](https://travis-ci.com/limadeveloper/SWMailgun)
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/SWMailgun)
 [![GitHub repo size](https://img.shields.io/github/repo-size/limadeveloper/SWMailgun.svg)](https://github.com/limadeveloper/SWMailgun)
