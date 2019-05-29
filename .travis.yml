@@ -3,6 +3,8 @@ osx_image: xcode10.2
 before_install:
 - set -o pipefail
 - xcrun simctl boot "iPhone XS" || echo "(Pre)Launched the simulator."
+- gem install cocoapods; cd Framework; pod install --repo-update;
+- cd ..
 script:
 - pod lib lint --allow-warnings
 - pod spec lint --allow-warnings
