@@ -8,6 +8,7 @@
 
 import Foundation
 import ObservableKit
+import SWMailgun
 
 class ViewModel {
 

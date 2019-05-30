@@ -24,11 +24,19 @@ import Foundation
 import BaseNetworkKit
 
 public struct MailgunEmail: NKCodable {
-  let from: String
-  let to: String
-  let subject: String
-  let html: String
-  let text: String
+  public let from: String
+  public let to: String
+  public let subject: String
+  public let html: String
+  public let text: String
+
+  public init(from: String, to: String, subject: String, html: String, text: String) {
+    self.from = from
+    self.to = to
+    self.subject = subject
+    self.html = html
+    self.text = text
+  }
 }
 
 extension MailgunEmail: Equatable {
