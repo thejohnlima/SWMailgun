@@ -55,8 +55,8 @@ let email = MailgunEmail(
 )
 
 let auth = MailgunAuth(
-    domain: "YOUR_API_KEY",
-    apiKey: "YOUR_DOMAIN"
+    domain: "YOUR_DOMAIN",
+    apiKey: "YOUR_API_KEY"
 )
 
 service.send(email: email, auth: auth) { result, error in
