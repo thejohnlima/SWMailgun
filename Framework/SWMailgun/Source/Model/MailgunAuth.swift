@@ -24,8 +24,8 @@ import Foundation
 import BaseNetworkKit
 
 public struct MailgunAuth: NKCodable {
-  let domain: String
-  let apiKey: String
+  public let domain: String
+  public let apiKey: String
 }
 
 extension MailgunAuth: Equatable {
