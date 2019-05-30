@@ -29,6 +29,14 @@ public struct MailgunEmail: NKCodable {
   public let subject: String
   public let html: String
   public let text: String
+
+  public init(from: String, to: String, subject: String, html: String, text: String) {
+    self.from = from
+    self.to = to
+    self.subject = subject
+    self.html = html
+    self.text = text
+  }
 }
 
 extension MailgunEmail: Equatable {
