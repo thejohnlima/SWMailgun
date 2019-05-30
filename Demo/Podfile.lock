@@ -1,12 +1,12 @@
 PODS:
   - BaseNetworkKit (1.0.7)
   - ObservableKit (1.0.1)
-  - SWMailgun (1.0.1):
+  - SWMailgun (1.0.0):
     - BaseNetworkKit
 
 DEPENDENCIES:
   - ObservableKit
-  - SWMailgun (from `https://github.com/limadeveloper/SWMailgun.git`, branch `master`)
+  - SWMailgun (from `https://github.com/limadeveloper/SWMailgun.git`, branch `fix/access_modifiers`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -15,19 +15,19 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   SWMailgun:
-    :branch: master
+    :branch: fix/access_modifiers
     :git: https://github.com/limadeveloper/SWMailgun.git
 
 CHECKOUT OPTIONS:
   SWMailgun:
-    :commit: c9a0603010ad4687bae9ec3e160a17ccac599e5d
+    :commit: 06d471661e50f26d110e00bb4ddfc9428b3b97a7
     :git: https://github.com/limadeveloper/SWMailgun.git
 
 SPEC CHECKSUMS:
   BaseNetworkKit: dbbff9573034f135aadf6a01a18d1af03e863b2d
   ObservableKit: f5f914904a359cbe56afa80ea411b45d5786058f
-  SWMailgun: e1c3c965fc6908a0d825014c9d408b3dffbc8fdc
+  SWMailgun: c7afcd34121791beb0b072a4c3eef73d06607469
 
-PODFILE CHECKSUM: 5bd19ef96ff1d71ac90f123bf89ff62dae0581f8
+PODFILE CHECKSUM: c463df50d3a89be79a688e82802570248f63bae8
 
 COCOAPODS: 1.7.0
