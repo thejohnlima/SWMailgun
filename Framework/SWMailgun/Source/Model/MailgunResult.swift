@@ -24,9 +24,9 @@ import Foundation
 import BaseNetworkKit
 
 public struct MailgunResult: NKCodable {
-  let id: String
-  let message: String
-  let success: Bool = false
+  public let id: String
+  public let message: String
+  public let success: Bool = false
 }
 
 extension MailgunResult: Equatable {

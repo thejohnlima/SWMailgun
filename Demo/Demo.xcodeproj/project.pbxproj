@@ -7,11 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B491C74229CC64500FDF706 /* MailgunService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B491C6E229CC64400FDF706 /* MailgunService.swift */; };
-		1B491C75229CC64500FDF706 /* MailgunAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B491C6F229CC64400FDF706 /* MailgunAPI.swift */; };
-		1B491C76229CC64500FDF706 /* MailgunAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B491C71229CC64400FDF706 /* MailgunAuth.swift */; };
-		1B491C77229CC64500FDF706 /* MailgunResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B491C72229CC64400FDF706 /* MailgunResult.swift */; };
-		1B491C78229CC64500FDF706 /* MailgunEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B491C73229CC64400FDF706 /* MailgunEmail.swift */; };
 		1BF55F05229CCD05009CEDD0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF55F04229CCD05009CEDD0 /* String+Extensions.swift */; };
 		1BFBC609229CC08D00E79FF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBC608229CC08D00E79FF9 /* AppDelegate.swift */; };
 		1BFBC60B229CC08D00E79FF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BFBC60A229CC08D00E79FF9 /* ViewController.swift */; };
@@ -23,11 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B491C6E229CC64400FDF706 /* MailgunService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunService.swift; sourceTree = "<group>"; };
-		1B491C6F229CC64400FDF706 /* MailgunAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunAPI.swift; sourceTree = "<group>"; };
-		1B491C71229CC64400FDF706 /* MailgunAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunAuth.swift; sourceTree = "<group>"; };
-		1B491C72229CC64400FDF706 /* MailgunResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunResult.swift; sourceTree = "<group>"; };
-		1B491C73229CC64400FDF706 /* MailgunEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunEmail.swift; sourceTree = "<group>"; };
 		1BF55F04229CCD05009CEDD0 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		1BFBC605229CC08D00E79FF9 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFBC608229CC08D00E79FF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -54,34 +44,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B491C6C229CC64400FDF706 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1B491C70229CC64400FDF706 /* Model */,
-				1B491C6D229CC64400FDF706 /* Network */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		1B491C6D229CC64400FDF706 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				1B491C6E229CC64400FDF706 /* MailgunService.swift */,
-				1B491C6F229CC64400FDF706 /* MailgunAPI.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		1B491C70229CC64400FDF706 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1B491C71229CC64400FDF706 /* MailgunAuth.swift */,
-				1B491C72229CC64400FDF706 /* MailgunResult.swift */,
-				1B491C73229CC64400FDF706 /* MailgunEmail.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		1BFBC5FC229CC08D00E79FF9 = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +73,6 @@
 				1BFBC611229CC08E00E79FF9 /* LaunchScreen.storyboard */,
 				1BFBC614229CC08E00E79FF9 /* Info.plist */,
 				1BFBC60F229CC08E00E79FF9 /* Assets.xcassets */,
-				1B491C6C229CC64400FDF706 /* Source */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -248,14 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B491C75229CC64500FDF706 /* MailgunAPI.swift in Sources */,
-				1B491C76229CC64500FDF706 /* MailgunAuth.swift in Sources */,
-				1B491C78229CC64500FDF706 /* MailgunEmail.swift in Sources */,
 				1BFBC60B229CC08D00E79FF9 /* ViewController.swift in Sources */,
 				1BF55F05229CCD05009CEDD0 /* String+Extensions.swift in Sources */,
-				1B491C74229CC64500FDF706 /* MailgunService.swift in Sources */,
 				1BFBC61B229CC45100E79FF9 /* ViewModel.swift in Sources */,
-				1B491C77229CC64500FDF706 /* MailgunResult.swift in Sources */,
 				1BFBC609229CC08D00E79FF9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
