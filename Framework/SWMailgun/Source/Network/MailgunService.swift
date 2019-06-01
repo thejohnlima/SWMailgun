@@ -24,7 +24,7 @@ import Foundation
 import BaseNetworkKit
 
 /// Mailgun API Class to be use to send emails
-public class MailgunService: NKBaseService<MailgunAPI> {
+open class MailgunService: NKBaseService<MailgunAPI> {
 
   /**
    Sends an email with the provided parameters
