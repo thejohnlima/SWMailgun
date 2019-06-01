@@ -33,10 +33,10 @@ open class MailgunService: NKBaseService<MailgunAPI> {
    - parameter auth: Email object
    - parameter completionHandler: The completion handler
    */
-  public func send(email: MailgunEmail,
-                   auth: MailgunAuth,
-                   environment: NKEnvironment = .production,
-                   completion: @escaping NKCommon.Completion<MailgunResult>) {
+  open func send(email: MailgunEmail,
+                 auth: MailgunAuth,
+                 environment: NKEnvironment = .production,
+                 completion: @escaping NKCommon.Completion<MailgunResult>) {
     fetch(.sendEmail(auth: auth, email: email, environment: environment)) { result in
       switch result {
       case .success(_, let data):
