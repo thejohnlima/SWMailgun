@@ -31,11 +31,10 @@ class ViewModel {
   private func compose(email: String) -> MailgunEmail {
     let html = "<b>Test</b>"
     return MailgunEmail(
-      from: "Excited User <mples.excited@samailgun.org>",
+      from: "Excited User <hello.world@mail.com>",
       to: email,
       subject: "This is a test",
-      html: html,
-      text: html.htmlToString
+      html: html
     )
   }
 }
