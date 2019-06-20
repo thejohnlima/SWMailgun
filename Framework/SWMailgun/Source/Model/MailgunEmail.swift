@@ -27,15 +27,52 @@ public struct MailgunEmail: NKCodable {
   public let from: String
   public let to: String
   public let subject: String
-  public let html: String
-  public let text: String
+  public let html: String?
+  public let text: String?
+  public let template: String?
+  public let variables: Data?
 
-  public init(from: String, to: String, subject: String, html: String, text: String) {
+  public init(from: String, to: String, subject: String, html: String? = nil, text: String? = nil, template: String? = nil, variables: Data? = nil) {
     self.from = from
     self.to = to
     self.subject = subject
     self.html = html
     self.text = text
+    self.template = template
+    self.variables = variables
+  }
+
+  public enum CodingKeys: String, CodingKey {
+    case from, to, subject, html, text, template
+    case variables = "h:X-Mailgun-Variables"
+  }
+
+  public var toJSON: NKCommon.JSON {
+    typealias K = CodingKeys
+
+    var result = NKCommon.JSON()
+    result[K.from.rawValue] = from
+    result[K.to.rawValue] = to
+    result[K.subject.rawValue] = subject
+
+    if let html = html {
+      result[K.html.rawValue] = html
+    }
+
+    if let text = text {
+      result[K.text.rawValue] = text
+    }
+
+    if let template = template {
+      result[K.template.rawValue] = template
+    }
+
+    if let variables = variables,
+      let json = try? JSONSerialization.jsonObject(with: variables, options: .allowFragments) as? NKCommon.JSON {
+      result[K.variables.rawValue] = json
+    }
+
+    return result
   }
 }
 
@@ -45,6 +82,8 @@ extension MailgunEmail: Equatable {
       lhs.to == rhs.to &&
       lhs.subject == rhs.subject &&
       lhs.html == rhs.html &&
-      lhs.text == rhs.text
+      lhs.text == rhs.text &&
+      lhs.template == rhs.template &&
+      lhs.variables == rhs.variables
   }
 }
