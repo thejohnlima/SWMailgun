@@ -6,5 +6,5 @@ target 'Demo' do
 
   # Pods for Demo
   pod 'ObservableKit'
-  pod 'SWMailgun'
+  pod 'SWMailgun', :git => 'https://github.com/limadeveloper/SWMailgun.git', :branch => 'feature/html_template'
 end
