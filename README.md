@@ -41,17 +41,18 @@ and run `pod install`
 Usage is very simple
 
 ```Swift
+// MARK: - Example using html string
+
 import SWMailgun
 
 let service = MailgunService()
 let html = "<b>Test</b>"
 
 let email = MailgunEmail(
-    from: "Excited User <mples.excited@samailgun.org>",
-    to: "demo@test.com",
+    from: "Excited User <hello.world@email.com>",
+    to: "mock@test.com",
     subject: "This is a test",
-    html: html,
-    text: html.htmlToString
+    html: html
 )
 
 let auth = MailgunAuth(
@@ -64,7 +65,44 @@ service.send(email: email, auth: auth) { result, error in
         print("Error: \(error)")
         return
     }
-    print("Email was sent: \(result.success)")
+    print("Email was sent: \(result.isSent())")
+}
+```
+
+```Swift
+
+// MARK: - Example using html template
+// You can create your html template in Mailgun web site
+
+import SWMailgun
+
+let service = MailgunService()
+let parameters = ["user_name": "John", "temporary_password": "johnjohn123"]
+
+guard let variables = try? JSONSerialization.data(withJSONObject: [parameters], options: .prettyPrinted) else {
+    print("❌ Something wrong. Check your parameters")
+    return
+}
+
+let email = MailgunEmail(
+    from: "Excited User <hello.world@mail.com>",
+    to: "mock@test.com",
+    subject: "This is a test",
+    template: "forgot_password",
+    variables: variables
+)
+
+let auth = MailgunAuth(
+    domain: "YOUR_DOMAIN",
+    apiKey: "YOUR_API_KEY"
+)
+
+service.send(email: email, auth: auth) { result, error in
+    guard let result = result else {
+        print("Error: \(error)")
+        return
+    }
+    print("Email was sent: \(result.isSent())")
 }
 ```
 
