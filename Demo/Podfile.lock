@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   SWMailgun:
-    :commit: ef39d2065225da65489bca39034ddc3a3b5d57f3
+    :commit: 81336575dc11c3f1580f80979d81d7942fe17d19
     :git: https://github.com/limadeveloper/SWMailgun.git
 
 SPEC CHECKSUMS:
