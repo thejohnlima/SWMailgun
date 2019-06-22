@@ -60,7 +60,8 @@ class ViewController: UIViewController {
           UIApplication.shared.isNetworkActivityIndicatorVisible = true
         case .load(data: let result):
           UIApplication.shared.isNetworkActivityIndicatorVisible = false
-          self.showAlert(message: "✅ \(result.message)")
+          let message = result.isSent() ? "✅ \(result.message)" : "❌ \(result.message)"
+          self.showAlert(message: message)
         case .errored(error: let error):
           UIApplication.shared.isNetworkActivityIndicatorVisible = false
           let error = (error as? NKError)?.message ?? error.localizedDescription
