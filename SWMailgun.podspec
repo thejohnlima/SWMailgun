@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name               = "SWMailgun"
-  s.version            = "1.0.3"
+  s.version            = "1.0.4"
   s.summary            = "✉️ SWMailgun provides simple alternative APIs when you need to send an email with your iOS app using Mailgun"
   s.requires_arc       = true
   s.homepage           = "https://github.com/limadeveloper/SWMailgun"
