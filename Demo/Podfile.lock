@@ -5,22 +5,28 @@ PODS:
     - BaseNetworkKit
 
 DEPENDENCIES:
+  - BaseNetworkKit (from `https://github.com/limadeveloper/BaseNetworkKit.git`, branch `master`)
   - ObservableKit
-  - SWMailgun (from `https://github.com/limadeveloper/SWMailgun.git`, branch `feature/html_template`)
+  - SWMailgun (from `https://github.com/limadeveloper/SWMailgun.git`, branch `master`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - BaseNetworkKit
     - ObservableKit
 
 EXTERNAL SOURCES:
+  BaseNetworkKit:
+    :branch: master
+    :git: https://github.com/limadeveloper/BaseNetworkKit.git
   SWMailgun:
-    :branch: feature/html_template
+    :branch: master
     :git: https://github.com/limadeveloper/SWMailgun.git
 
 CHECKOUT OPTIONS:
+  BaseNetworkKit:
+    :commit: 76b1c26b1049e36805617c42dc8fdf8f11617d29
+    :git: https://github.com/limadeveloper/BaseNetworkKit.git
   SWMailgun:
-    :commit: 1cc0298255ebdee12eca38c30f774159e4f1eb57
+    :commit: ef39d2065225da65489bca39034ddc3a3b5d57f3
     :git: https://github.com/limadeveloper/SWMailgun.git
 
 SPEC CHECKSUMS:
@@ -28,6 +34,6 @@ SPEC CHECKSUMS:
   ObservableKit: f5f914904a359cbe56afa80ea411b45d5786058f
   SWMailgun: e98737234edc59cd12e25f6e66eb74ba22566966
 
-PODFILE CHECKSUM: 96d1fcbf60cbb72dc87f56e8f6710c96df5b24d9
+PODFILE CHECKSUM: 1a7908826ce3ca6ee7dff82b3f6eba66f07e0057
 
 COCOAPODS: 1.7.2
