@@ -40,7 +40,12 @@ open class MailgunService: NKBaseService<MailgunAPI> {
     fetch(.sendEmail(auth: auth, email: email, environment: environment)) { result in
       switch result {
       case .success(_, let data):
-        let result = MailgunResult(data)
+        guard let data = MailgunResult(data) else {
+          let result = MailgunResult(message: "Something wrong")
+          completion(result, nil)
+          return
+        }
+        let result = MailgunResult(message: data.message, id: data.id)
         completion(result, nil)
       case .failure(let error):
         completion(nil, error)

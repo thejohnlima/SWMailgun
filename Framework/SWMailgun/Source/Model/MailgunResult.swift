@@ -26,19 +26,20 @@ import BaseNetworkKit
 public struct MailgunResult: NKCodable {
   public let id: String
   public let message: String
-  public let success: Bool
 
-  public init(id: String, message: String, success: Bool = false) {
+  public init(message: String, id: String = "0") {
     self.id = id
     self.message = message
-    self.success = success
+  }
+
+  public func isSent() -> Bool {
+    return id != "0" && !id.isEmpty
   }
 }
 
 extension MailgunResult: Equatable {
   public static func == (lhs: MailgunResult, rhs: MailgunResult) -> Bool {
     return lhs.id == rhs.id &&
-      lhs.message == rhs.message &&
-      lhs.success == rhs.success
+      lhs.message == rhs.message
   }
 }
