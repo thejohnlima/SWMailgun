@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B43128D22BF0C4600C8ADE4 /* MailgunContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43128C22BF0C4600C8ADE4 /* MailgunContentType.swift */; };
 		1BE9A399229CB897002DEBEB /* SWMailgun.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE9A397229CB897002DEBEB /* SWMailgun.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1BEF1B5B229CBC5E003C7480 /* MailgunService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B55229CBC5E003C7480 /* MailgunService.swift */; };
 		1BEF1B5C229CBC5E003C7480 /* MailgunAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B56229CBC5E003C7480 /* MailgunAPI.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B43128C22BF0C4600C8ADE4 /* MailgunContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailgunContentType.swift; sourceTree = "<group>"; };
 		1BE9A394229CB897002DEBEB /* SWMailgun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWMailgun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE9A397229CB897002DEBEB /* SWMailgun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWMailgun.h; sourceTree = "<group>"; };
 		1BE9A398229CB897002DEBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		1BEF1B53229CBAA5003C7480 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				1B43128C22BF0C4600C8ADE4 /* MailgunContentType.swift */,
 				1BEF1B57229CBC5E003C7480 /* Model */,
 				1BEF1B54229CBC5E003C7480 /* Network */,
 			);
@@ -225,6 +228,7 @@
 				1BEF1B5E229CBC5E003C7480 /* MailgunResult.swift in Sources */,
 				1BEF1B5F229CBC5E003C7480 /* MailgunEmail.swift in Sources */,
 				1BEF1B5B229CBC5E003C7480 /* MailgunService.swift in Sources */,
+				1B43128D22BF0C4600C8ADE4 /* MailgunContentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
