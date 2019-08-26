@@ -23,8 +23,8 @@ xcuserdata/
 *.xcscmblueprint
 .DS_Store
 .DS_Store?
-coverage
 .vscode
+coverage
 
 ## Obj-C/Swift specific
 *.hmap
@@ -67,3 +67,4 @@ fastlane/screenshots
 fastlane/README.md
 report.xml
 test_output
+reports
