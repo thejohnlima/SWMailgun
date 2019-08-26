@@ -1,6 +1,6 @@
 //
 //  ViewModel.swift
-//  Demo
+//  Example
 //
 //  Created by John Lima on 27/05/19.
 //  Copyright © 2019 limadeveloper. All rights reserved.
@@ -14,7 +14,7 @@ class ViewModel {
 
   // MARK: - Properties
   let service = MailgunService()
-  let observable: OKObservable<OKState<MailgunResult>> = OKObservable(.loading)
+  let observable: OKObservable<OKState<MailgunResult, Error>> = OKObservable(.loading)
 
   // MARK: - Public Methods
   func sendEmail(to: String, auth: MailgunAuth) {
