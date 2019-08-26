@@ -21,3 +21,40 @@
 //  SOFTWARE.
 
 import Foundation
+import BaseNetworkKit
+@testable import SWMailgun
+
+class MockService: MailgunService {
+
+  var status: Status = .fail
+
+  enum Status {
+    case success
+    case fail
+  }
+
+  enum SWError: Error, CustomStringConvertible {
+    case `default`
+
+    var description: String {
+      switch self {
+      case .default:
+        return "Something wrong"
+      }
+    }
+  }
+
+  override func send(email: MailgunEmail,
+                     auth: MailgunAuth,
+                     environment: NKEnvironment = .production,
+                     completion: @escaping NKCommon.Completion<MailgunResult>) {
+    switch status {
+    case .success:
+      let model = MailgunResult(message: "email sent", id: "123456")
+      completion(model, nil)
+    case .fail:
+      let error = SWError.default
+      completion(nil, error)
+    }
+  }
+}

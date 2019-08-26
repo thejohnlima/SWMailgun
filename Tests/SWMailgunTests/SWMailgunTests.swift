@@ -24,11 +24,59 @@ import XCTest
 @testable import SWMailgun
 
 final class SWMailgunTests: XCTestCase {
+
+  // MARK: - Properties
+  private var service: MockService?
+
   static var allTests = [
-    ("testExample", testExample),
+    ("testSendEmailSuccess", testSendEmailSuccess),
+    ("testSendEmailFail", testSendEmailFail)
   ]
 
-  func testExample() {
-    
+  // MARK: - Overrides
+  override func setUp() {
+    super.setUp()
+    service = MockService()
+  }
+
+  override func tearDown() {
+    service = nil
+    super.tearDown()
+  }
+
+  // MARK: - Test Methods
+  func testSendEmailSuccess() {
+    let expectation = self.expectation(description: "Wait for send email with success")
+
+    service?.status = .success
+
+    let email = MailgunEmail(from: "john@johnjohn.com", to: "to@email.com", subject: "Hey human")
+    let auth = MailgunAuth(domain: "ABCDE", apiKey: "EDCBA")
+
+    service?.send(email: email, auth: auth) { result, error in
+      XCTAssertNil(error)
+      XCTAssertEqual(result?.id, "123456")
+      XCTAssertEqual(result?.message, "email sent")
+      expectation.fulfill()
+    }
+
+    waitForExpectations(timeout: 0.3)
+  }
+
+  func testSendEmailFail() {
+    let expectation = self.expectation(description: "Wait for send email with fail")
+
+    service?.status = .fail
+
+    let email = MailgunEmail(from: "john@johnjohn.com", to: "to@email.com", subject: "Hey human")
+    let auth = MailgunAuth(domain: "ABCDE", apiKey: "EDCBA")
+
+    service?.send(email: email, auth: auth) { result, error in
+      XCTAssertNil(result)
+      XCTAssertEqual((error as? MockService.SWError)?.description, "Something wrong")
+      expectation.fulfill()
+    }
+
+    waitForExpectations(timeout: 0.3)
   }
 }
