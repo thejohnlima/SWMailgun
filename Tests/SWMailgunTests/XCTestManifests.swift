@@ -20,40 +20,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import BaseNetworkKit
+import XCTest
 
-public enum MailgunAPI {
-  case sendEmail(auth: MailgunAuth, email: MailgunEmail, environment: NKEnvironment)
+#if !canImport(ObjectiveC)
+public func allTests() -> [XCTestCaseEntry] {
+  return [
+    testCase(SWMailgunTests.allTests),
+  ]
 }
-
-extension MailgunAPI: NKFlowTarget {
-  public var baseURL: URL {
-    switch self {
-    case .sendEmail(let auth, _, _):
-      return URL(stringValue: "https://api:\(auth.apiKey)@api.mailgun.net/v3/\(auth.domain)/")
-    }
-  }
-
-  public var path: String {
-    return "messages"
-  }
-
-  public var method: NKHTTPMethods {
-    return .post
-  }
-
-  public var task: NKTask {
-    switch self {
-    case .sendEmail(_, let email, _):
-      let parameters = email.toJSON
-      return .requestParameters(parameters, encoding: .formData)
-    }
-  }
-
-  public var environment: NKEnvironment {
-    switch self {
-    case .sendEmail(_, _, let environment):
-      return environment
-    }
-  }
-}
+#endif

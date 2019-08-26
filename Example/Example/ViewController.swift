@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Demo
+//  Example
 //
 //  Created by John Lima on 27/05/19.
 //  Copyright © 2019 limadeveloper. All rights reserved.

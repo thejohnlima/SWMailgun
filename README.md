@@ -5,7 +5,7 @@
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/SWMailgun)
 [![GitHub repo size](https://img.shields.io/github/repo-size/limadeveloper/SWMailgun.svg)](https://github.com/limadeveloper/SWMailgun)
 [![License](https://img.shields.io/github/license/limadeveloper/SWMailgun.svg)](https://raw.githubusercontent.com/limadeveloper/SWMailgun/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/ObservableKit.svg?style=flat)](https://developer.apple.com/ios/)
+[![Platform](https://img.shields.io/cocoapods/p/SWMailgun.svg?style=flat)](https://developer.apple.com/ios/)
 
 **SWMailgun** provides a simple alternative when you need to send an email with your iOS app using MailGun.
 
@@ -21,9 +21,20 @@ This provide a simple alternative when you need to send an email with your iOS a
 ## ❗️ Requirements
 
 - iOS 9.3+
-- Swift 4.1+
+- Swift 5.0+
 
 ## ⚒ Installation
+
+### Swift Package Manager
+
+**SWMailgun** is available through [SPM](https://developer.apple.com/videos/play/wwdc2019/408/). To install
+it, follow the steps:
+
+```script
+Open Xcode project > File > Swift Packages > Add Package Dependecy
+```
+
+After that, put the url in the field: `https://github.com/limadeveloper/SWMailgun.git`
 
 ### CocoaPods
 
@@ -31,7 +42,7 @@ This provide a simple alternative when you need to send an email with your iOS a
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SWMailgun', '~> 1.0'
+pod 'SWMailgun'
 ```
 
 and run `pod install`
@@ -106,7 +117,7 @@ service.send(email: email, auth: auth) { result, error in
 }
 ```
 
-*If you need more examples, open [`demo project`](https://github.com/limadeveloper/SWMailgun/tree/master/Demo).*
+*If you need more examples, open [`demo project`](https://github.com/limadeveloper/SWMailgun/tree/master/Example).*
 
 ## 🙋🏻‍♂️ Communication
 

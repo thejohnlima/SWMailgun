@@ -7,29 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B43128D22BF0C4600C8ADE4 /* MailgunContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43128C22BF0C4600C8ADE4 /* MailgunContentType.swift */; };
+		1BB0575A23134D9E001F4D29 /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = 1BB0575923134D9E001F4D29 /* Sources */; };
 		1BE9A399229CB897002DEBEB /* SWMailgun.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE9A397229CB897002DEBEB /* SWMailgun.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BEF1B5B229CBC5E003C7480 /* MailgunService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B55229CBC5E003C7480 /* MailgunService.swift */; };
-		1BEF1B5C229CBC5E003C7480 /* MailgunAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B56229CBC5E003C7480 /* MailgunAPI.swift */; };
-		1BEF1B5D229CBC5E003C7480 /* MailgunAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B58229CBC5E003C7480 /* MailgunAuth.swift */; };
-		1BEF1B5E229CBC5E003C7480 /* MailgunResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B59229CBC5E003C7480 /* MailgunResult.swift */; };
-		1BEF1B5F229CBC5E003C7480 /* MailgunEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEF1B5A229CBC5E003C7480 /* MailgunEmail.swift */; };
-		6E09766FCD885796D234F14C /* Pods_SWMailgun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6525D7E2FD6028E9E9509602 /* Pods_SWMailgun.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B43128C22BF0C4600C8ADE4 /* MailgunContentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailgunContentType.swift; sourceTree = "<group>"; };
+		1BB0575923134D9E001F4D29 /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = ../../Sources; sourceTree = "<group>"; };
 		1BE9A394229CB897002DEBEB /* SWMailgun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWMailgun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE9A397229CB897002DEBEB /* SWMailgun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWMailgun.h; sourceTree = "<group>"; };
 		1BE9A398229CB897002DEBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1BEF1B55229CBC5E003C7480 /* MailgunService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunService.swift; sourceTree = "<group>"; };
-		1BEF1B56229CBC5E003C7480 /* MailgunAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunAPI.swift; sourceTree = "<group>"; };
-		1BEF1B58229CBC5E003C7480 /* MailgunAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunAuth.swift; sourceTree = "<group>"; };
-		1BEF1B59229CBC5E003C7480 /* MailgunResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunResult.swift; sourceTree = "<group>"; };
-		1BEF1B5A229CBC5E003C7480 /* MailgunEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailgunEmail.swift; sourceTree = "<group>"; };
-		49BC112F5C245B854D8AF076 /* Pods-SWMailgun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWMailgun.release.xcconfig"; path = "Target Support Files/Pods-SWMailgun/Pods-SWMailgun.release.xcconfig"; sourceTree = "<group>"; };
-		6525D7E2FD6028E9E9509602 /* Pods_SWMailgun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWMailgun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6B9388A320E70B9F3219923 /* Pods-SWMailgun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWMailgun.debug.xcconfig"; path = "Target Support Files/Pods-SWMailgun/Pods-SWMailgun.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E09766FCD885796D234F14C /* Pods_SWMailgun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +35,6 @@
 				1BE9A396229CB897002DEBEB /* SWMailgun */,
 				1BE9A395229CB897002DEBEB /* Products */,
 				886C16E0DA7C7A291A036ABE /* Pods */,
-				F84633150C4B748B8A09A59B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,55 +51,16 @@
 			children = (
 				1BE9A398229CB897002DEBEB /* Info.plist */,
 				1BE9A397229CB897002DEBEB /* SWMailgun.h */,
-				1BEF1B53229CBAA5003C7480 /* Source */,
+				1BB0575923134D9E001F4D29 /* Sources */,
 			);
 			path = SWMailgun;
-			sourceTree = "<group>";
-		};
-		1BEF1B53229CBAA5003C7480 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				1B43128C22BF0C4600C8ADE4 /* MailgunContentType.swift */,
-				1BEF1B57229CBC5E003C7480 /* Model */,
-				1BEF1B54229CBC5E003C7480 /* Network */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		1BEF1B54229CBC5E003C7480 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				1BEF1B55229CBC5E003C7480 /* MailgunService.swift */,
-				1BEF1B56229CBC5E003C7480 /* MailgunAPI.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		1BEF1B57229CBC5E003C7480 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				1BEF1B58229CBC5E003C7480 /* MailgunAuth.swift */,
-				1BEF1B59229CBC5E003C7480 /* MailgunResult.swift */,
-				1BEF1B5A229CBC5E003C7480 /* MailgunEmail.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		886C16E0DA7C7A291A036ABE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F6B9388A320E70B9F3219923 /* Pods-SWMailgun.debug.xcconfig */,
-				49BC112F5C245B854D8AF076 /* Pods-SWMailgun.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		F84633150C4B748B8A09A59B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6525D7E2FD6028E9E9509602 /* Pods_SWMailgun.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +81,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1BE9A39C229CB897002DEBEB /* Build configuration list for PBXNativeTarget "SWMailgun" */;
 			buildPhases = (
-				A164B9F41FFC78C46C6E3571 /* [CP] Check Pods Manifest.lock */,
 				1BE9A38F229CB897002DEBEB /* Headers */,
 				1BE9A390229CB897002DEBEB /* Sources */,
 				1BE9A391229CB897002DEBEB /* Frameworks */,
@@ -158,7 +102,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = limadeveloper;
+				ORGANIZATIONNAME = thejohnlima;
 				TargetAttributes = {
 					1BE9A393229CB897002DEBEB = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -188,47 +132,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB0575A23134D9E001F4D29 /* Sources in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A164B9F41FFC78C46C6E3571 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SWMailgun-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1BE9A390229CB897002DEBEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEF1B5C229CBC5E003C7480 /* MailgunAPI.swift in Sources */,
-				1BEF1B5D229CBC5E003C7480 /* MailgunAuth.swift in Sources */,
-				1BEF1B5E229CBC5E003C7480 /* MailgunResult.swift in Sources */,
-				1BEF1B5F229CBC5E003C7480 /* MailgunEmail.swift in Sources */,
-				1BEF1B5B229CBC5E003C7480 /* MailgunService.swift in Sources */,
-				1B43128D22BF0C4600C8ADE4 /* MailgunContentType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +273,6 @@
 		};
 		1BE9A39D229CB897002DEBEB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6B9388A320E70B9F3219923 /* Pods-SWMailgun.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -374,8 +287,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.swmailgun;
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.SWMailgun;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -385,7 +298,6 @@
 		};
 		1BE9A39E229CB897002DEBEB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 49BC112F5C245B854D8AF076 /* Pods-SWMailgun.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -400,8 +312,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.5;
-				PRODUCT_BUNDLE_IDENTIFIER = limadeveloper.swmailgun;
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = thejohnlima.SWMailgun;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
