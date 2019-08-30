@@ -21,7 +21,11 @@ class ViewModel {
     observable.value = .loading
     service.send(email: compose(email: to), auth: auth, environment: .develop) { result, error in
       guard let result = result else {
-        self.observable.value = .errored(error: error!)
+        if let error = error {
+          self.observable.value = .errored(error: error)
+        } else {
+          self.observable.value = .empty
+        }
         return
       }
       self.observable.value = .load(data: result)

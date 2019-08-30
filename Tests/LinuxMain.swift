@@ -25,5 +25,7 @@ import XCTest
 import SWMailgunTests
 
 var tests = [XCTestCaseEntry]()
+
 tests += SWMailgunTests.allTests()
+
 XCTMain(tests)

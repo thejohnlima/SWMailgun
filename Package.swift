@@ -14,7 +14,7 @@ let package = Package(
     .library(
       name: "SWMailgun",
       targets: ["SWMailgun"]
-    ),
+    )
   ],
   dependencies: [
     .package(url: "https://github.com/limadeveloper/BaseNetworkKit.git", from: "1.0.9")
@@ -27,6 +27,6 @@ let package = Package(
     .testTarget(
       name: "SWMailgunTests",
       dependencies: ["SWMailgun"]
-    ),
+    )
   ]
 )

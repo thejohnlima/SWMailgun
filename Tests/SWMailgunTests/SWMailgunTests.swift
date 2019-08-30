@@ -20,8 +20,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import XCTest
 @testable import SWMailgun
+import XCTest
 
 final class SWMailgunTests: XCTestCase {
 

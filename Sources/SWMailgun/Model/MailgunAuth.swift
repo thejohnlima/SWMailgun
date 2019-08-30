@@ -20,8 +20,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
 import BaseNetworkKit
+import Foundation
 
 public struct MailgunAuth: NKCodable {
   public let domain: String

@@ -25,7 +25,7 @@ import XCTest
 #if !canImport(ObjectiveC)
 public func allTests() -> [XCTestCaseEntry] {
   return [
-    testCase(SWMailgunTests.allTests),
+    testCase(SWMailgunTests.allTests)
   ]
 }
 #endif

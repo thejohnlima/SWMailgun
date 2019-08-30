@@ -6,9 +6,9 @@
 //  Copyright © 2019 limadeveloper. All rights reserved.
 //
 
-import UIKit
 import BaseNetworkKit
 import SWMailgun
+import UIKit
 
 class ViewController: UIViewController {
 
@@ -33,11 +33,11 @@ class ViewController: UIViewController {
 
   // MARK: - Actions
   @IBAction private func send(_ sender: Any?) {
-    guard isFieldsFilled() else {
+    guard isFieldsFilled(), let to = emailField.text, let apiKey = apiKeyField.text, let domain = domainField.text else {
       showAlert(message: "Fill all fields")
       return
     }
-    viewModel.sendEmail(to: emailField.text!, auth: MailgunAuth(domain: domainField.text!, apiKey: apiKeyField.text!))
+    viewModel.sendEmail(to: to, auth: MailgunAuth(domain: domain, apiKey: apiKey))
     view.endEditing(true)
   }
 

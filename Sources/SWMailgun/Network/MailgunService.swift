@@ -20,8 +20,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
 import BaseNetworkKit
+import Foundation
 
 /// Mailgun API Class to be use to send emails
 open class MailgunService: NKBaseService<MailgunAPI> {

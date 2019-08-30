@@ -20,8 +20,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
 import BaseNetworkKit
+import Foundation
 
 public struct MailgunEmail: NKCodable {
   public let from: String
@@ -32,7 +32,13 @@ public struct MailgunEmail: NKCodable {
   public let template: String?
   public let variables: Data?
 
-  public init(from: String, to: String, subject: String, html: String? = nil, text: String? = nil, template: String? = nil, variables: Data? = nil) {
+  public init(from: String,
+              to: String,
+              subject: String,
+              html: String? = nil,
+              text: String? = nil,
+              template: String? = nil,
+              variables: Data? = nil) {
     self.from = from
     self.to = to
     self.subject = subject
