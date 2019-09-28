@@ -17,7 +17,7 @@ let package = Package(
     )
   ],
   dependencies: [
-    .package(url: "https://github.com/limadeveloper/BaseNetworkKit.git", from: "1.0.9")
+    .package(url: "https://github.com/thejohnlima/BaseNetworkKit.git", from: "1.0.9")
   ],
   targets: [
     .target(
