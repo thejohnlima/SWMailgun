@@ -1,10 +1,10 @@
 # SWMailgun
 
-[![GitHub release](https://img.shields.io/github/release/limadeveloper/SWMailgun.svg?style=flat-square)](https://github.com/limadeveloper/SWMailgun/releases)
-[![Build Status](https://travis-ci.com/limadeveloper/SWMailgun.svg?branch=master)](https://travis-ci.com/limadeveloper/SWMailgun)
+[![GitHub release](https://img.shields.io/github/release/thejohnlima/SWMailgun.svg?style=flat-square)](https://github.com/thejohnlima/SWMailgun/releases)
+[![Build Status](https://travis-ci.com/thejohnlima/SWMailgun.svg?branch=master)](https://travis-ci.com/thejohnlima/SWMailgun)
 [![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/SWMailgun)
-[![GitHub repo size](https://img.shields.io/github/repo-size/limadeveloper/SWMailgun.svg)](https://github.com/limadeveloper/SWMailgun)
-[![License](https://img.shields.io/github/license/limadeveloper/SWMailgun.svg)](https://raw.githubusercontent.com/limadeveloper/SWMailgun/master/LICENSE)
+[![GitHub repo size](https://img.shields.io/github/repo-size/thejohnlima/SWMailgun.svg)](https://github.com/thejohnlima/SWMailgun)
+[![License](https://img.shields.io/github/license/thejohnlima/SWMailgun.svg)](https://raw.githubusercontent.com/thejohnlima/SWMailgun/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/SWMailgun.svg?style=flat)](https://developer.apple.com/ios/)
 
 **SWMailgun** provides a simple alternative when you need to send an email with your iOS app using MailGun.
@@ -34,7 +34,7 @@ it, follow the steps:
 Open Xcode project > File > Swift Packages > Add Package Dependecy
 ```
 
-After that, put the url in the field: `https://github.com/limadeveloper/SWMailgun.git`
+After that, put the url in the field: `https://github.com/thejohnlima/SWMailgun.git`
 
 ### CocoaPods
 
@@ -117,7 +117,7 @@ service.send(email: email, auth: auth) { result, error in
 }
 ```
 
-*If you need more examples, open [`demo project`](https://github.com/limadeveloper/SWMailgun/tree/master/Example).*
+*If you need more examples, open [`demo project`](https://github.com/thejohnlima/SWMailgun/tree/master/Example).*
 
 ## 🙋🏻‍♂️ Communication
 
@@ -127,4 +127,4 @@ service.send(email: email, auth: auth) { result, error in
 
 ## 📜 License
 
-**SWMailgun** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/limadeveloper/SWMailgun/master/LICENSE) file for more info.
+**SWMailgun** is under MIT license. See the [LICENSE](https://raw.githubusercontent.com/thejohnlima/SWMailgun/master/LICENSE) file for more info.
