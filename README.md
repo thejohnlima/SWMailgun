@@ -6,6 +6,7 @@
 [![GitHub repo size](https://img.shields.io/github/repo-size/thejohnlima/SWMailgun.svg)](https://github.com/thejohnlima/SWMailgun)
 [![License](https://img.shields.io/github/license/thejohnlima/SWMailgun.svg)](https://raw.githubusercontent.com/thejohnlima/SWMailgun/master/LICENSE)
 [![Platform](https://img.shields.io/cocoapods/p/SWMailgun.svg?style=flat)](https://developer.apple.com/ios/)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/thejohnlima)
 
 **SWMailgun** provides a simple alternative when you need to send an email with your iOS app using MailGun.
 
