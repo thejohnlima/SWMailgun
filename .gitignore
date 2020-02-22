@@ -25,6 +25,7 @@ xcuserdata/
 .DS_Store?
 .vscode
 coverage
+Gemfile.lock
 
 ## Obj-C/Swift specific
 *.hmap

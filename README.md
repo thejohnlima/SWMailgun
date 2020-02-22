@@ -1,12 +1,31 @@
-# SWMailgun
+<h1 align="center">SWMailgun</h1>
 
-[![GitHub release](https://img.shields.io/github/release/thejohnlima/SWMailgun.svg?style=flat-square)](https://github.com/thejohnlima/SWMailgun/releases)
-[![Build Status](https://travis-ci.com/thejohnlima/SWMailgun.svg?branch=master)](https://travis-ci.com/thejohnlima/SWMailgun)
-[![CocoaPods](https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=flat)](https://cocoapods.org/pods/SWMailgun)
-[![GitHub repo size](https://img.shields.io/github/repo-size/thejohnlima/SWMailgun.svg)](https://github.com/thejohnlima/SWMailgun)
-[![License](https://img.shields.io/github/license/thejohnlima/SWMailgun.svg)](https://raw.githubusercontent.com/thejohnlima/SWMailgun/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/SWMailgun.svg?style=flat)](https://developer.apple.com/ios/)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/thejohnlima)
+<p align="center">
+ <a href="https://github.com/thejohnlima/SWMailgun/releases">
+  <img src="https://img.shields.io/github/v/release/thejohnlima/SWMailgun?style=for-the-badge">
+ </a>
+ <a href="https://github.com/thejohnlima/SWMailgun/actions">
+  <img src="https://img.shields.io/github/workflow/status/thejohnlima/SWMailgun/CI/master?style=for-the-badge">
+ </a>
+ <a href="https://cocoapods.org/pods/SWMailgun">
+  <img src="https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=for-the-badge">
+ </a><br>
+ <a href="https://github.com/thejohnlima/SWMailgun">
+  <img src="https://img.shields.io/github/repo-size/thejohnlima/SWMailgun.svg?style=for-the-badge">
+ </a>
+ <a href="https://raw.githubusercontent.com/thejohnlima/SWMailgun/master/LICENSE">
+  <img src="https://img.shields.io/github/license/thejohnlima/SWMailgun.svg?style=for-the-badge">
+ </a>
+ <a href="https://developer.apple.com/ios/">
+  <img src="https://img.shields.io/cocoapods/p/SWMailgun?style=for-the-badge">
+ </a>
+ <a href="https://developer.apple.com/swift/">
+  <img src="https://img.shields.io/badge/Swift-5-blue.svg?style=for-the-badge">
+ </a>
+ <a href="https://patreon.com/thejohnlima">
+  <img src="https://img.shields.io/badge/donate-patreon-yellow.svg?style=for-the-badge">
+ </a>
+</p>
 
 **SWMailgun** provides a simple alternative when you need to send an email with your iOS app using MailGun.
 
