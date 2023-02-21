@@ -47,7 +47,10 @@ extension MailgunAPI: NKFlowTarget {
     switch self {
     case .sendEmail(_, let email, _):
       let parameters = email.toJSON
-      return .requestCompositeParameters(bodyParameters: [:], urlParameters: parameters)
+      if email.template?.isEmpty ?? true {
+        return .requestCompositeParameters(bodyParameters: [:], urlParameters: parameters)
+      }
+      return .requestParameters(parameters, encoding: .formData)
     }
   }
 
