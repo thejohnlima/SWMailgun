@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B575A492313891C00CF61E3 /* BaseNetworkKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B575A482313891C00CF61E3 /* BaseNetworkKit */; };
 		1B575A4C2313895C00CF61E3 /* SWMailgun in Frameworks */ = {isa = PBXBuildFile; productRef = 1B575A4B2313895C00CF61E3 /* SWMailgun */; };
 		1B575A4F2313898400CF61E3 /* ObservableKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1B575A4E2313898400CF61E3 /* ObservableKit */; };
 		1BF55F05229CCD05009CEDD0 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF55F04229CCD05009CEDD0 /* String+Extensions.swift */; };
@@ -38,7 +37,6 @@
 			files = (
 				1B575A4C2313895C00CF61E3 /* SWMailgun in Frameworks */,
 				1B575A4F2313898400CF61E3 /* ObservableKit in Frameworks */,
-				1B575A492313891C00CF61E3 /* BaseNetworkKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +91,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				1B575A482313891C00CF61E3 /* BaseNetworkKit */,
 				1B575A4B2313895C00CF61E3 /* SWMailgun */,
 				1B575A4E2313898400CF61E3 /* ObservableKit */,
 			);
@@ -126,7 +123,6 @@
 			);
 			mainGroup = 1BFBC5FC229CC08D00E79FF9;
 			packageReferences = (
-				1B575A472313891C00CF61E3 /* XCRemoteSwiftPackageReference "BaseNetworkKit" */,
 				1B575A4A2313895C00CF61E3 /* XCRemoteSwiftPackageReference "SWMailgun" */,
 				1B575A4D2313898400CF61E3 /* XCRemoteSwiftPackageReference "ObservableKit" */,
 			);
@@ -308,6 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,14 +358,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1B575A472313891C00CF61E3 /* XCRemoteSwiftPackageReference "BaseNetworkKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/limadeveloper/BaseNetworkKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.9;
-			};
-		};
 		1B575A4A2313895C00CF61E3 /* XCRemoteSwiftPackageReference "SWMailgun" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/limadeveloper/SWMailgun.git";
@@ -387,11 +377,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1B575A482313891C00CF61E3 /* BaseNetworkKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 1B575A472313891C00CF61E3 /* XCRemoteSwiftPackageReference "BaseNetworkKit" */;
-			productName = BaseNetworkKit;
-		};
 		1B575A4B2313895C00CF61E3 /* SWMailgun */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1B575A4A2313895C00CF61E3 /* XCRemoteSwiftPackageReference "SWMailgun" */;
