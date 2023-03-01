@@ -26,6 +26,7 @@ xcuserdata/
 .vscode
 coverage
 Gemfile.lock
+vendor
 
 ## Obj-C/Swift specific
 *.hmap

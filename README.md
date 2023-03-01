@@ -4,9 +4,6 @@
  <a href="https://github.com/thejohnlima/SWMailgun/releases">
   <img src="https://img.shields.io/github/v/release/thejohnlima/SWMailgun?style=for-the-badge">
  </a>
- <a href="https://github.com/thejohnlima/SWMailgun/actions">
-  <img src="https://img.shields.io/github/workflow/status/thejohnlima/SWMailgun/CI/master?style=for-the-badge">
- </a>
  <a href="https://cocoapods.org/pods/SWMailgun">
   <img src="https://img.shields.io/badge/Cocoa%20Pods-✓-4BC51D.svg?style=for-the-badge">
  </a><br>
